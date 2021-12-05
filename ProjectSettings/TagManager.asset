@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Spikes
+  - Gem
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - Coins
+  - Ground
+  - Enemy
+  - Player
+  - Walkable
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3476033849
+    locked: 0
+  - name: Ground
+    uniqueID: 3123827513
+    locked: 0
+  - name: DecorationsBehindPlayer
+    uniqueID: 1334090637
+    locked: 0
+  - name: Items
+    uniqueID: 3020607595
+    locked: 0
+  - name: Enemy
+    uniqueID: 1466642069
+    locked: 0
+  - name: Player
+    uniqueID: 2097479239
+    locked: 0
+  - name: Decorations
+    uniqueID: 2289964781
+    locked: 0

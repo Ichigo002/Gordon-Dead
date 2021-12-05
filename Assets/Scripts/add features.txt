@@ -1,0 +1,15 @@
+
+Add below features:
+=================================
+# add sounds slider
+# use mixer audio
+# make finished window interactable
+# add sounds to click UI
+# level loading
+# try to make my own music, sounds in BoscaCeoil or AduiaCity
+# update input system in menu scene
+
+=================================
+# make flower from wooden clips for Wiki
+
+W + W = <3
