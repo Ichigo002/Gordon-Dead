@@ -37,8 +37,8 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
             ],
             ""bindings"": [
                 {
-                    ""name"": ""AD"",
-                    ""id"": ""5ab2e229-c865-4ac1-8677-2335d27d0161"",
+                    ""name"": ""ad"",
+                    ""id"": ""5d283a58-59b5-4364-b188-17ea26c691f4"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -49,29 +49,29 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""negative"",
-                    ""id"": ""39079ef7-06a1-4248-8622-07dbda1d6aa8"",
+                    ""id"": ""c4bc83d5-f050-4821-945c-cae5d0264db1"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""MovingAction"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""1446cce4-af34-4733-a0ad-1d3d8716d4c9"",
+                    ""id"": ""174b2163-d038-4dc5-815b-1cbce1099d9e"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""MovingAction"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""Arrows"",
-                    ""id"": ""13f71212-810d-4377-b48d-b5e036219dfa"",
+                    ""name"": ""arrows"",
+                    ""id"": ""e8f3a329-d64b-46af-a09d-6a4f6ce0b24d"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -82,29 +82,29 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""negative"",
-                    ""id"": ""2b19ddb2-afe9-479c-8838-be95cf274070"",
+                    ""id"": ""ff92f20a-4a53-42d2-a506-bb73177713a0"",
                     ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""MovingAction"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""36afd067-fe8a-4273-bf5b-a96e7c053bc3"",
+                    ""id"": ""6660b3f9-d228-434b-a637-ce87cb8a6ef4"",
                     ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""MovingAction"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""Gamepad"",
-                    ""id"": ""4ea02439-e0b6-4a6d-9744-4b4cc37f67aa"",
+                    ""name"": ""pad"",
+                    ""id"": ""893297d7-8115-4158-9ba9-45c1a72ce075"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -115,66 +115,66 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""negative"",
-                    ""id"": ""b01bdbe6-c6fd-456a-a13e-a0ac3b312b19"",
+                    ""id"": ""9c8b5d7c-166a-407d-9421-99be20f6c2ad"",
                     ""path"": ""<Gamepad>/leftStick/left"",
                     ""interactions"": """",
-                    ""processors"": ""StickDeadzone"",
-                    ""groups"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""MovingAction"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""0e1ce080-f468-43da-b1fe-f73d6b7f9582"",
+                    ""id"": ""fc5cab37-8586-4367-beae-fe5b701b00b3"",
                     ""path"": ""<Gamepad>/leftStick/right"",
                     ""interactions"": """",
-                    ""processors"": ""StickDeadzone"",
-                    ""groups"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""MovingAction"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": """",
-                    ""id"": ""a1584ca7-7861-4f9a-a9b5-1875d4d5456b"",
+                    ""id"": ""a6bd9423-46b1-4641-b43d-d41cfb057ecf"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""f0b45699-e791-4bba-84e2-bacc06d4d73a"",
+                    ""id"": ""358f04f9-fc70-4a18-9c7f-5882ab6918a9"",
                     ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""db10bc43-7fa0-4ba6-8236-66be5fdca007"",
+                    ""id"": ""188139ec-e0bc-4c87-8169-4b926a7bb363"",
                     ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""0ef60f5a-210b-48cc-975c-ebab0c203a0c"",
+                    ""id"": ""f9069534-879d-43da-9805-f1c4be05594e"",
                     ""path"": ""<Gamepad>/rightTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -182,13 +182,21 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
             ]
         },
         {
-            ""name"": ""Actions"",
+            ""name"": ""Interactions"",
             ""id"": ""e9e69e39-faad-4a36-894b-780cc9ede1a8"",
             ""actions"": [
                 {
-                    ""name"": ""Atttack"",
+                    ""name"": ""Attack"",
                     ""type"": ""Button"",
                     ""id"": ""950fe494-5dd6-4c69-ae59-fe20badc7b7c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""GotoLevel"",
+                    ""type"": ""Button"",
+                    ""id"": ""8733fa51-7254-44a0-a830-30728e99658a"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -197,34 +205,56 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""dfd4e368-ca39-43e9-813e-77327ba0eaad"",
-                    ""path"": ""<Keyboard>/r"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Atttack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""49968495-a10f-4198-97fc-6646e1d15088"",
-                    ""path"": ""<Keyboard>/numpad0"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Atttack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""b53ad53b-e943-48e3-93b5-11bb06f8938f"",
+                    ""id"": ""fa4a5f6a-0531-47f0-ae13-233fe4ccd987"",
                     ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Atttack"",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""77a6eefc-9f77-4073-85fc-09c9652afb05"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""202cfa04-786b-4e95-b4bb-47875b78a56e"",
+                    ""path"": ""<Keyboard>/numpad0"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""47373ee8-aefd-4f13-b94f-daf2dbe4b299"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""GotoLevel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ec220d59-cfce-44b1-9ed9-baa9c9a6999c"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""GotoLevel"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -246,22 +276,22 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""332ea9bd-ab45-4f2e-9e01-e6320f64a525"",
+                    ""id"": ""565012b2-449c-4f7d-b172-7622a3aac390"",
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Escape"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""d53ec038-2b98-43ab-bb01-39b44562d38e"",
+                    ""id"": ""8466e309-204f-4aa2-8be4-7de2a3bd7d8e"",
                     ""path"": ""<Gamepad>/select"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""Escape"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -269,15 +299,39 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
             ]
         }
     ],
-    ""controlSchemes"": []
+    ""controlSchemes"": [
+        {
+            ""name"": ""Keyboard"",
+            ""bindingGroup"": ""Keyboard"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Gamepad"",
+            ""bindingGroup"": ""Gamepad"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Gamepad>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        }
+    ]
 }");
         // Movement
         m_Movement = asset.FindActionMap("Movement", throwIfNotFound: true);
         m_Movement_MovingAction = m_Movement.FindAction("MovingAction", throwIfNotFound: true);
         m_Movement_Jump = m_Movement.FindAction("Jump", throwIfNotFound: true);
-        // Actions
-        m_Actions = asset.FindActionMap("Actions", throwIfNotFound: true);
-        m_Actions_Atttack = m_Actions.FindAction("Atttack", throwIfNotFound: true);
+        // Interactions
+        m_Interactions = asset.FindActionMap("Interactions", throwIfNotFound: true);
+        m_Interactions_Attack = m_Interactions.FindAction("Attack", throwIfNotFound: true);
+        m_Interactions_GotoLevel = m_Interactions.FindAction("GotoLevel", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Escape = m_UI.FindAction("Escape", throwIfNotFound: true);
@@ -368,38 +422,46 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
     }
     public MovementActions @Movement => new MovementActions(this);
 
-    // Actions
-    private readonly InputActionMap m_Actions;
-    private IActionsActions m_ActionsActionsCallbackInterface;
-    private readonly InputAction m_Actions_Atttack;
-    public struct ActionsActions
+    // Interactions
+    private readonly InputActionMap m_Interactions;
+    private IInteractionsActions m_InteractionsActionsCallbackInterface;
+    private readonly InputAction m_Interactions_Attack;
+    private readonly InputAction m_Interactions_GotoLevel;
+    public struct InteractionsActions
     {
         private @PlayerInputActions m_Wrapper;
-        public ActionsActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Atttack => m_Wrapper.m_Actions_Atttack;
-        public InputActionMap Get() { return m_Wrapper.m_Actions; }
+        public InteractionsActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Attack => m_Wrapper.m_Interactions_Attack;
+        public InputAction @GotoLevel => m_Wrapper.m_Interactions_GotoLevel;
+        public InputActionMap Get() { return m_Wrapper.m_Interactions; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(ActionsActions set) { return set.Get(); }
-        public void SetCallbacks(IActionsActions instance)
+        public static implicit operator InputActionMap(InteractionsActions set) { return set.Get(); }
+        public void SetCallbacks(IInteractionsActions instance)
         {
-            if (m_Wrapper.m_ActionsActionsCallbackInterface != null)
+            if (m_Wrapper.m_InteractionsActionsCallbackInterface != null)
             {
-                @Atttack.started -= m_Wrapper.m_ActionsActionsCallbackInterface.OnAtttack;
-                @Atttack.performed -= m_Wrapper.m_ActionsActionsCallbackInterface.OnAtttack;
-                @Atttack.canceled -= m_Wrapper.m_ActionsActionsCallbackInterface.OnAtttack;
+                @Attack.started -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnAttack;
+                @Attack.performed -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnAttack;
+                @Attack.canceled -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnAttack;
+                @GotoLevel.started -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnGotoLevel;
+                @GotoLevel.performed -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnGotoLevel;
+                @GotoLevel.canceled -= m_Wrapper.m_InteractionsActionsCallbackInterface.OnGotoLevel;
             }
-            m_Wrapper.m_ActionsActionsCallbackInterface = instance;
+            m_Wrapper.m_InteractionsActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Atttack.started += instance.OnAtttack;
-                @Atttack.performed += instance.OnAtttack;
-                @Atttack.canceled += instance.OnAtttack;
+                @Attack.started += instance.OnAttack;
+                @Attack.performed += instance.OnAttack;
+                @Attack.canceled += instance.OnAttack;
+                @GotoLevel.started += instance.OnGotoLevel;
+                @GotoLevel.performed += instance.OnGotoLevel;
+                @GotoLevel.canceled += instance.OnGotoLevel;
             }
         }
     }
-    public ActionsActions @Actions => new ActionsActions(this);
+    public InteractionsActions @Interactions => new InteractionsActions(this);
 
     // UI
     private readonly InputActionMap m_UI;
@@ -433,14 +495,33 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         }
     }
     public UIActions @UI => new UIActions(this);
+    private int m_KeyboardSchemeIndex = -1;
+    public InputControlScheme KeyboardScheme
+    {
+        get
+        {
+            if (m_KeyboardSchemeIndex == -1) m_KeyboardSchemeIndex = asset.FindControlSchemeIndex("Keyboard");
+            return asset.controlSchemes[m_KeyboardSchemeIndex];
+        }
+    }
+    private int m_GamepadSchemeIndex = -1;
+    public InputControlScheme GamepadScheme
+    {
+        get
+        {
+            if (m_GamepadSchemeIndex == -1) m_GamepadSchemeIndex = asset.FindControlSchemeIndex("Gamepad");
+            return asset.controlSchemes[m_GamepadSchemeIndex];
+        }
+    }
     public interface IMovementActions
     {
         void OnMovingAction(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
     }
-    public interface IActionsActions
+    public interface IInteractionsActions
     {
-        void OnAtttack(InputAction.CallbackContext context);
+        void OnAttack(InputAction.CallbackContext context);
+        void OnGotoLevel(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

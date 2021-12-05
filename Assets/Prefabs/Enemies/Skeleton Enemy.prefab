@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b234428a072f5614c99ddf98dc2d74ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 180
+  health: 30
   dealtDamage: 17
   knockback: 8
   numberOfCoins: 12

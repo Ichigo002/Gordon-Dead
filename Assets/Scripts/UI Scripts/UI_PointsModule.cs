@@ -22,12 +22,12 @@ public class UI_PointsModule : MonoBehaviour
     }
     public void AddGem(int points)
     {
-        gemAnim.Play("PickedUpGem");
+        gemAnim.SetTrigger("pickUp");
         gemText.text = points.ToString();
     }
     public void AddCoin(int points)
     {
-        coinAnim.Play("PickedUpEvilcoin");
+        coinAnim.SetTrigger("pickUp");
         coinText.text = points.ToString();
     }
     public void LoseHeart(float health, float maxHp)

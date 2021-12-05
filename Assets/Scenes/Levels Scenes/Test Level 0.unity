@@ -4061,11 +4061,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 2983330587379042496, guid: 68e349eaf27a5674c8ce5476e8ae8943,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0181d96605339414c8217d5274008506, type: 2}
+    - target: {fileID: 2983330587379042497, guid: 68e349eaf27a5674c8ce5476e8ae8943,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2983330587379042497, guid: 68e349eaf27a5674c8ce5476e8ae8943,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2983330587379042497, guid: 68e349eaf27a5674c8ce5476e8ae8943,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2983330587390579136, guid: 68e349eaf27a5674c8ce5476e8ae8943,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2983330587390579136, guid: 68e349eaf27a5674c8ce5476e8ae8943,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2983330587390579136, guid: 68e349eaf27a5674c8ce5476e8ae8943,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2983330587390579136, guid: 68e349eaf27a5674c8ce5476e8ae8943,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -9.300049
       objectReference: {fileID: 0}
+    - target: {fileID: 2983330587390579136, guid: 68e349eaf27a5674c8ce5476e8ae8943,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 14.900002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2983330587390579143, guid: 68e349eaf27a5674c8ce5476e8ae8943,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4e3ed634a84b8ed4b854f5d73beee9b0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68e349eaf27a5674c8ce5476e8ae8943, type: 3}
 --- !u!1001 &8655796943341909304

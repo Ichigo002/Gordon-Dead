@@ -33,15 +33,15 @@ public class PlayerAttack : MonoBehaviour, IDiePlayer
     private void OnEnable()
     {
         playerInput = new PlayerInputActions();
-        playerInput.Actions.Atttack.performed += OnAttackAction;
+        playerInput.Interactions.Attack.performed += OnAttackAction;
 
-        playerInput.Actions.Atttack.Enable();
+        playerInput.Interactions.Attack.Enable();
         playerInput.Enable();
     }
 
     private void OnDisable()
     {
-        playerInput.Actions.Atttack.Disable();
+        playerInput.Interactions.Attack.Disable();
         playerInput.Disable();
     }
 

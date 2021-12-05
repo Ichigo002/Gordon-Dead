@@ -17,7 +17,8 @@ public class UI_FinishWindowModule : MonoBehaviour
     [SerializeField] private infoCounter gemCounter;
     [SerializeField] private infoCounter coinsCounter;
     [Space]
-    [SerializeField] private float timeCounting = .5f;
+    [SerializeField] private float maxTime = 5f;
+    [SerializeField] private float delay = 2f;
     [SerializeField] private UI_Windows winsHandling;
 
     /// <summary>
@@ -25,40 +26,38 @@ public class UI_FinishWindowModule : MonoBehaviour
     /// </summary>
     public void FinishLevel(int numberGems, int numberCoins)
     {
-        StartCoroutine(DisplayPoints(numberGems, numberCoins));
+        winsHandling.OnFinished();
+
+        StartCoroutine(CountingGems(numberGems));
+        StartCoroutine(CountingCoins(numberCoins));
     }
 
-    private IEnumerator DisplayPoints(int gems, int coins)
+    private IEnumerator CountingGems(int gems)
     {
-        gemCounter.counter.text = InsertZeroBefore(1, 0);
-        coinsCounter.counter.text = InsertZeroBefore(1, 0);
+        gemCounter.counter.text = PrefixBefore(1, 0);
+        yield return new WaitForSecondsRealtime(delay);
 
-        winsHandling.OnFinished();
-        yield return new WaitForSecondsRealtime(2f);
-
-        int g = 0, c = 0;
-
-        for(int i = 0; i < (gems > coins ? gems : coins); i++)
+        for(int i = 1; i <= gems; i++)
         {
-            if (i < gems)
-            {
-                g++;
-                gemCounter.animator.SetTrigger("count");
-                gemCounter.counter.text = InsertZeroBefore(2, g);
-            }
-            if (i < coins)
-            {
-                c++;
-                coinsCounter.animator.SetTrigger("count");
-                coinsCounter.counter.text = InsertZeroBefore(2, c);
-            }
+            gemCounter.animator.SetTrigger("count");
+            gemCounter.counter.text = PrefixBefore(2, i);
+            yield return new WaitForSecondsRealtime(maxTime / gems);
+        }
+    }
+    private IEnumerator CountingCoins(int coins)
+    {
+        coinsCounter.counter.text = PrefixBefore(1, 0);
+        yield return new WaitForSecondsRealtime(delay);
 
-            yield return new WaitForSecondsRealtime(timeCounting);
-            continue;
+        for (int i = 1; i <= coins; i++)
+        {
+            coinsCounter.animator.SetTrigger("count");
+            coinsCounter.counter.text = PrefixBefore(2, i);
+            yield return new WaitForSecondsRealtime(maxTime / coins);
         }
     }
 
-    private string InsertZeroBefore(int numbersOfPrefix, float number, char sign = '0')
+    public static string PrefixBefore(int numbersOfPrefix, float number, char sign = '0')
     {
         string result = "";
 

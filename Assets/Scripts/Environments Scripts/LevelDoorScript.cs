@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class LevelDoorScript : MonoBehaviour
 {
@@ -11,14 +10,17 @@ public class LevelDoorScript : MonoBehaviour
     [SerializeField] private int neededLevel = 0;
     [Header("In place {0} is displayed current needed level")]
     [TextArea]
-    public string _info = "Press E to load {0} level";
+    public string _infoPC = "Press E to load {0} level";
+    [TextArea]
+    public string _infoGamePad = "Press RB to load {0} level";
 
     private Light2D[] lights = new Light2D[2];
     private bool isPlayer;
     private UI_SpeechBalloonsScript speechBalloon;
     private PlayerStats player;
+    private PlayerInputActions playerInput;
 
-    void Start()
+    void Awake()
     {
         speechBalloon = GameObject.FindObjectOfType<UI_SpeechBalloonsScript>();
         player = GameObject.FindWithTag("Player").GetComponent<PlayerStats>();
@@ -29,23 +31,48 @@ public class LevelDoorScript : MonoBehaviour
         else { SwitchLight(false); }
     }
 
-    void Update()
+    private void OnEnable()
     {
-        if (Input.GetButtonDown("Interaction") && isPlayer)
+        
+        playerInput = new PlayerInputActions();
+        playerInput.Interactions.GotoLevel.performed += OnInteraction;
+        playerInput.Enable();
+        playerInput.Interactions.GotoLevel.Enable();
+    }
+
+    private void OnChangeControl(PlayerInput obj)
+    {
+        Debug.LogWarning("ZMIANA! " + obj.currentControlScheme);
+    }
+
+    private void OnDisable()
+    {
+        playerInput.Disable();
+        playerInput.Interactions.GotoLevel.Disable();
+    }
+
+    private void OnInteraction(InputAction.CallbackContext obj)
+    {
+        
+        if (isPlayer)
         {
             isPlayer = false;
-            speechBalloon.InstantBalloon(string.Format(_info,neededLevel), false);
+            string info = Gamepad.current.enabled ? _infoGamePad : _infoPC;
+            speechBalloon.InstantBalloon(string.Format(info, neededLevel), false);
             SceneManager.LoadScene(loadScene);
         }
 
         if (player.GetCurrentLvL() >= neededLevel)
-        { SwitchLight(true); } else { SwitchLight(false); }
+        { SwitchLight(true); }
+        else { SwitchLight(false); }
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && player.GetCurrentLvL() >= neededLevel)
         {
-            speechBalloon.InstantBalloon(string.Format(_info, neededLevel), true);
+            string info = Gamepad.current.enabled ? _infoGamePad : _infoPC;
+            speechBalloon.InstantBalloon(string.Format(info, neededLevel), true);
             isPlayer = true;
         }
     }
@@ -53,7 +80,8 @@ public class LevelDoorScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            speechBalloon.InstantBalloon(string.Format(_info, neededLevel), false);
+            string info = Gamepad.current.enabled ? _infoGamePad : _infoPC;
+            speechBalloon.InstantBalloon(string.Format(info, neededLevel), false);
             isPlayer = false;
         }
     }
